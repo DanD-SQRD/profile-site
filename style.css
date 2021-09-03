@@ -1,0 +1,265 @@
+/*CSS comments*/
+/* @import url at the top of the code */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+* {
+font-family: 'Special Elite', cursive;
+}
+body {
+    background-image: url('images/MOSHED-2021-9-1-22-17-18.gif');
+    background-repeat: no-repeat;
+    background-size: 1366px 867px;
+  }
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+  .container-1{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+
+  }
+  .container-2{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+
+  }
+  .container-1 div, .container-2 div{
+    border:1px;
+    padding:10px;
+  }
+  
+  .box-1{
+    flex:1;
+  }
+  .box-2{
+    flex:1;
+  }
+
+  .container-2-box{
+    flex-basis: 50%;  
+  }
+  .horizontally-1 {
+    height: 125px;	
+    overflow: hidden;
+    position: relative;
+   }
+   .horizontally-1 .inner {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    text-align: end;
+    /* Starting position */
+    -moz-transform:translateX(40%);
+    -webkit-transform:translateX(40%);	
+    transform:translateX(40%);
+    /* Apply animation to this element */	
+    -moz-animation: horizontally 7s linear infinite alternate;
+    -webkit-animation: horizontally 7s linear infinite alternate;
+    animation: horizontally 7s linear infinite alternate;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes horizontally {
+    0%   { -moz-transform: translateX(40%); }
+    100% { -moz-transform: translateX(-40%); }
+   }
+   @-webkit-keyframes horizontally {
+    0%   { -webkit-transform: translateX(40%); }
+    100% { -webkit-transform: translateX(-40%); }
+   }
+   @keyframes horizontally {
+    0%   { 
+    -moz-transform: translateX(40%); /* Browser bug fix */
+    -webkit-transform: translateX(40%); /* Browser bug fix */
+    transform: translateX(40%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-40%); /* Browser bug fix */
+    -webkit-transform: translateX(-40%); /* Browser bug fix */
+    transform: translateX(-40%); 
+    }
+   }
+   .horizontally-2 {
+    height: 250x;	
+    overflow: hidden;
+    position: relative;
+   }
+
+   .horizontally-2 .inner {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    text-align: start;
+    /* Starting position */
+    -moz-transform:translateX(40%);
+    -webkit-transform:translateX(40%);	
+    transform:translateX(40%);
+    /* Apply animation to this element */	
+    -moz-animation: horizontally 9s linear infinite alternate;
+    -webkit-animation: horizontally 9s linear infinite alternate;
+    animation: horizontally 9s linear infinite alternate;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes horizontally {
+    0%   { -moz-transform: translateX(200%); }
+    100% { -moz-transform: translateX(-200%); }
+   }
+   @-webkit-keyframes horizontally {
+    0%   { -webkit-transform: translateX(200%); }
+    100% { -webkit-transform: translateX(-200%); }
+   }
+   @keyframes horizontally {
+    0%   { 
+    -moz-transform: translateX(200%); /* Browser bug fix */
+    -webkit-transform: translateX(200%); /* Browser bug fix */
+    transform: translateX(200%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-200%); /* Browser bug fix */
+    -webkit-transform: translateX(-200%); /* Browser bug fix */
+    transform: translateX(-200%); 
+    }
+   }
+<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+
+.snote{
+max-width:100%;
+background-color:#666;
+}
+
+.snote h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+
+.snote ul,li{
+  list-style:none;
+}
+
+.snote ul{
+  overflow:hidden;
+  padding:4em;
+}
+
+.snote ul li a{
+  text-decoration:none;
+  color:#000;
+  background:rgb(228, 228, 210);
+  display:block;
+  height:14em;
+  width:12em;
+  padding:2em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+  opacity: 0.5;
+}
+
+.snote ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+   position:relative;
+  top:5px;
+  background:rgb(172, 189, 172);
+  opacity: 0.5;
+}
+
+.snote ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+  opacity: 0.5;
+}
+
+.snote ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+  background:rgb(111, 105, 111);
+  opacity: 0.5;
+}
+
+.snote ul li a:hover,ul li a:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+.snote ul li{
+  margin:1em;
+  float:left;
+}
+
+.snote ul li h2{
+  font-size:160%;
+  font-weight:bold;
+  padding-bottom:0px;
+  font-family:Oswald;
+  text-align:center;
+  color:rgb(191, 102, 61);
+}
+
+.snote ul li p{
+  font-family:'Shadows Into Light Two',arial,sans-serif;
+  font-size:75%;
+  color:#000;
+}
+
+.cards-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+.cards-1 img {
+  margin: 45px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  transform:rotate(-6deg);
+}
+
+.cards-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+.cards-2 img {
+  margin: 45px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  transform:rotate(+6deg);
+}
+
+.cards-1 img:hover{
+  z-index:20;
+  transform: scale(1.5) rotate(10deg);
+  
+
+}
+
+.cards-2 img:hover{
+    z-index:20;
+    transform: scale(1.5) rotate(-10deg);
+}
